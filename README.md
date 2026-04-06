@@ -34,3 +34,11 @@ Linux（Ubuntu Server）上にnginxを構築し、Webページ公開を目指し
 - VPSと自宅サーバーの違い、セキュリティリスクについて少し学習
 
 → ファイルの所有者がrootだったため書き込み不可。chownコマンドで所有者を変更し解決
+
+## 2026-04-06
+- GCPでのVPS構築とアクセス
+- Nginxの導入とウェブサーバー公開
+- certbotとpython3-certbot-nginxのインストールによるHTTPS（SSL/TLS）化
+- OSLoginやセッション切れにより sudo が一時的に効かなくなる現象を確認
+
+→ ユーザーとグループ管理（sudoグループ追加）で一時的な sudo 問題を回避 `sudo usermod -aG sudo`
